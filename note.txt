@@ -1,0 +1,28 @@
+切图：
+1.快速选中图层 alt+右键
+2.atl单独点击图层左边的眼睛——单独显示图层
+3.图像——裁切——透明像素
+4.按下ctrl+alt+shift+s——原稿——png24
+5.ctrl+alt+z还原图像
+6.alt点击图层眼睛——找回隐藏图层
+7.tinypng的压缩
+
+定位
+1.固定定位 position:fixed  一定配合方向出现  固定在浏览器的左上角
+抽出文档流
+2.绝对定位:position:absolute  抽出文档流
+3.相对定位:position:relative  相对定位，相对于自己定位(作微调)
+半抽出文档流
+
+渐变：
+radial-gradient 径向渐变
+linear-gradient 线性渐变
+background: -webkit-radial-gradient(#47aff9,#0065ad);
+background: -moz-radial-gradient(#47aff9,#0065ad);
+background: -o-radial-gradient(#47aff9,#0065ad);
+background: -ms-radial-gradient(#47aff9,#0065ad);
+
+transform:translate(x,y)
+
+opacity所有透明
+background:rgba
