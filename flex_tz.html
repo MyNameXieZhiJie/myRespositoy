@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*大骰子样式*/
+        body>div{
+            border: 3px solid black;
+        }
+        div{
+            margin: 2px;
+            height: 300px;
+            width: 300px;
+            box-sizing: border-box;
+            vertical-align: top;
+            border-radius:12%;
+            display: inline-block;
+        }
+        /*点数样式*/
+        .sm1,.sm2,.sm3,.sm4,.sm5,.sm6{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: #0000ff;
+        }
+        /*第一个骰子*/
+        div.big1{
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .big1 .sm1{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #f00;
+        }
+        /*骰子2*/
+        div.big2{
+            display: inline-flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        /*骰子3*/
+        div.big3{
+            display: inline-flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .sm3l{
+            align-self: flex-start;
+        }
+        .sm3r{
+            align-self: flex-end;
+        }
+        /*骰子4*/
+        div.big4 div{
+            display: inline-flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 49%;
+        }
+	.big4 .sm4{
+		background:red;
+	}
+        /*五六骰子*/
+        div.big5>div,div.big6>div{
+            display: inline-flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            height: 32%;
+            width: 99%;
+            align-items: center;
+        }
+        div.big5 .big5c{
+            display: flex;
+            justify-content: center;
+        }
+        div.big6>div{
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+<div class="big1">
+    <div class="sm1"></div>
+</div>
+<div class="big2">
+    <div class="sm2"></div>
+    <div class="sm2"></div>
+</div>
+<div class="big3">
+    <div class="sm3 sm3l"></div>
+    <div class="sm3"></div>
+    <div class="sm3 sm3r"></div>
+</div>
+<div class="big4">
+    <div>
+        <div class="sm4"></div>
+        <div class="sm4"></div>
+    </div>
+    <div>
+        <div class="sm4"></div>
+        <div class="sm4"></div>
+    </div>
+</div>
+<div class="big5">
+    <div>
+        <div class="sm5"></div>
+        <div class="sm5"></div>
+    </div>
+    <div class="big5c">
+        <div class="sm5"></div>
+    </div>
+    <div>
+        <div class="sm5"></div>
+        <div class="sm5"></div>
+    </div>
+</div>
+<div class="big6">
+    <div>
+        <div class="sm6"></div>
+        <div class="sm6"></div>
+    </div>
+    <div>
+        <div class="sm6"></div>
+        <div class="sm6"></div>
+    </div>
+    <div>
+        <div class="sm6"></div>
+        <div class="sm6"></div>
+    </div>
+</div>
+</body>
+</html>
